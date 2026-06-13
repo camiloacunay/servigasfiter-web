@@ -81,20 +81,20 @@
           <h2>Agenda una visita</h2>
           <p>Cuéntanos qué ocurre y recibe orientación inicial.</p>
 
-          <form class="contact-form" action="mailto:contacto@servigasfiter.cl" method="post" enctype="text/plain">
+          <form class="contact-form" id="whatsappForm">
             <label>
               Nombre
-              <input type="text" name="nombre" placeholder="Tu nombre" required />
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
             </label>
 
             <label>
               Teléfono
-              <input type="tel" name="telefono" placeholder="+56 9 1234 5678" required />
+              <input type="tel" id="telefono" name="telefono" placeholder="+56 9 7285 7716" required />
             </label>
 
             <label>
               Servicio requerido
-              <select name="servicio" required>
+              <select id="servicio" name="servicio" required>
                 <option value="">Selecciona una opción</option>
                 <option>Fuga de agua</option>
                 <option>Destape</option>
@@ -107,7 +107,7 @@
 
             <label>
               Mensaje
-              <textarea name="mensaje" rows="4" placeholder="Describe brevemente el problema"></textarea>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe brevemente el problema"></textarea>
             </label>
 
             <button class="btn btn-primary form-button" type="submit">Enviar solicitud</button>
