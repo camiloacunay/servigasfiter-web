@@ -491,22 +491,55 @@ img {
   color: var(--text);
 }
 
+.contact-list a {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.contact-list a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
 .note {
   margin-top: 18px;
   font-size: 0.95rem !important;
 }
 
-.floating-whatsapp {
+/* Botones flotantes inferiores: teléfono + WhatsApp */
+.floating-actions {
   position: fixed;
   right: 22px;
   bottom: 22px;
   z-index: 90;
-  background: #22c55e;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.floating-call,
+.floating-whatsapp {
   color: #fff;
   font-weight: 900;
   padding: 14px 18px;
   border-radius: 999px;
-  box-shadow: 0 14px 30px rgba(34, 197, 94, 0.35);
+  white-space: nowrap;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-call:hover,
+.floating-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.28);
+}
+
+.floating-call {
+  background: #0f172a;
+}
+
+.floating-whatsapp {
+  background: #22c55e;
 }
 
 .footer {
@@ -605,14 +638,24 @@ img {
     padding: 22px;
   }
 
-  .floating-whatsapp {
+  .floating-actions {
     left: 16px;
     right: 16px;
+    bottom: 16px;
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 8px;
+  }
+
+  .floating-call,
+  .floating-whatsapp {
     text-align: center;
+    padding: 14px 10px;
+    font-size: 0.9rem;
   }
 
   .footer-content {
-    padding-bottom: 56px;
+    padding-bottom: 70px;
   }
 }
 
@@ -623,5 +666,15 @@ img {
 
   .brand-phone {
     font-size: 0.78rem;
+  }
+
+  .floating-call,
+  .floating-whatsapp {
+    font-size: 0.82rem;
+    padding: 13px 8px;
+  }
+
+  .floating-actions {
+    grid-template-columns: 1.45fr 1fr;
   }
 }
