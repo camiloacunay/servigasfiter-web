@@ -26,7 +26,7 @@
   />
   <meta
     name="keywords"
-    content="gasfitería, gasfíter, plomero, destapes, fugas de agua, grifería, WC, lavamanos, lavaplatos, filtros antisarro, Santiago"
+    content="gasfitería, gasfíter, plomero, destapes, fugas de agua, fugas de gas, grifería, WC, lavamanos, lavaplatos, filtros antisarro, Santiago"
   />
   <meta name="author" content="ServiGasfíter" />
   <meta name="robots" content="index, follow" />
@@ -72,16 +72,16 @@
 <body>
   <header class="site-header">
     <nav class="navbar container">
-     <div class="brand">
-       <a href="#inicio" class="brand-logo" aria-label="Ir al inicio">
-         <img src="assets/logo.svg" alt="Logo ServiGasfíter" />
-       </a>
+      <div class="brand">
+        <a href="#inicio" class="brand-logo" aria-label="Ir al inicio">
+          <img src="assets/logo.svg" alt="Logo ServiGasfíter" />
+        </a>
 
-       <div class="brand-text">
-         <a href="#inicio" class="brand-title">ServiGasfíter</a>
-         <a href="tel:+56972857716" class="brand-phone">+56 9 7285 7716</a>
+        <div class="brand-text">
+          <a href="#inicio" class="brand-title">ServiGasfíter</a>
+          <a href="tel:+56972857716" class="brand-phone">+56 9 7285 7716</a>
+        </div>
       </div>
-    </div>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
         ☰
@@ -106,24 +106,24 @@
             materiales adecuados y garantía por el servicio realizado.
           </p>
 
-       <div class="hero-actions">
-         <a 
-           class="btn btn-primary" 
-           href="https://wa.me/56972857716?text=Hola%2C%20necesito%20cotizar%20un%20servicio%20de%20gasfiter%C3%ADa" 
-           target="_blank" 
-           rel="noopener"
-         >
-           WhatsApp inmediato
-         </a>
+          <div class="hero-actions">
+            <a 
+              class="btn btn-primary" 
+              href="https://wa.me/56972857716?text=Hola%2C%20necesito%20cotizar%20un%20servicio%20de%20gasfiter%C3%ADa" 
+              target="_blank" 
+              rel="noopener"
+            >
+              WhatsApp inmediato
+            </a>
 
-         <a class="btn btn-call" href="tel:+56972857716">
-           Llamar ahora
-         </a>
+            <a class="btn btn-call" href="tel:+56972857716">
+              Llamar ahora
+            </a>
 
-         <a class="btn btn-secondary" href="#servicios">
-           Ver servicios
-         </a>
-       </div>
+            <a class="btn btn-secondary" href="#servicios">
+              Ver servicios
+            </a>
+          </div>
 
           <div class="hero-trust">
             <div>
@@ -161,7 +161,9 @@
               <select id="servicio" name="servicio" required>
                 <option value="">Selecciona una opción</option>
                 <option>Fuga de agua</option>
+                <option>Fuga de gas</option>
                 <option>Destape</option>
+                <option>Destape de alcantarillado</option>
                 <option>Instalación de grifería</option>
                 <option>WC / lavamanos / lavaplatos</option>
                 <option>Calefont</option>
@@ -189,7 +191,7 @@
         <div class="section-heading">
           <span class="eyebrow">Servicios</span>
           <h2>Gasfitería para hogares, oficinas y locales</h2>
-          <p>Soluciones prácticas, limpias y seguras para problemas frecuentes de agua y artefactos sanitarios.</p>
+          <p>Soluciones prácticas, limpias y seguras para problemas frecuentes de agua, gas y artefactos sanitarios.</p>
         </div>
 
         <div class="services-grid">
@@ -284,12 +286,12 @@
           <span class="eyebrow">Contacto</span>
           <h2>Solicita tu cotización</h2>
           <p>
-            Reemplaza estos datos por los reales del negocio antes de publicar la página.
+            Contáctanos para coordinar una visita o solicitar orientación inicial.
           </p>
 
           <div class="contact-list">
-            <p><strong>Teléfono:</strong> +56 9 7285 7716</p>
-            <p><strong>Email:</strong> Cns.plopez@gmail.com</p>
+            <p><strong>Teléfono:</strong> <a href="tel:+56972857716">+56 9 7285 7716</a></p>
+            <p><strong>Email:</strong> <a href="mailto:Cns.plopez@gmail.com">Cns.plopez@gmail.com</a></p>
             <p><strong>Zona:</strong> Santiago y alrededores</p>
             <p><strong>Horario:</strong> Lunes a sábado, 08:00 a 20:00. Emergencias según disponibilidad.</p>
           </div>
@@ -303,9 +305,25 @@
     </section>
   </main>
 
-  <a class="floating-whatsapp" href="https://wa.me/56972857716?text=Hola%2C%20necesito%20un%20gasf%C3%ADter" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-    WhatsApp
-  </a>
+  <div class="floating-actions">
+    <a 
+      class="floating-call" 
+      href="tel:+56972857716" 
+      aria-label="Llamar a ServiGasfíter"
+    >
+      +56 9 7285 7716
+    </a>
+
+    <a 
+      class="floating-whatsapp" 
+      href="https://wa.me/56972857716?text=Hola%2C%20necesito%20un%20gasf%C3%ADter" 
+      target="_blank" 
+      rel="noopener" 
+      aria-label="Contactar por WhatsApp"
+    >
+      WhatsApp
+    </a>
+  </div>
 
   <footer class="footer">
     <div class="container footer-content">
@@ -314,6 +332,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
