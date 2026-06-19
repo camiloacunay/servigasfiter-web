@@ -201,7 +201,7 @@ img {
   font-weight: 800;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
 .btn:hover {
@@ -214,10 +214,32 @@ img {
   box-shadow: 0 12px 24px rgba(15, 118, 110, 0.25);
 }
 
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-call {
+  background: #fff;
+  color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 10px 22px rgba(15, 118, 110, 0.12);
+}
+
+.btn-call:hover {
+  background: #ecfdf5;
+  color: var(--primary-dark);
+  box-shadow: 0 12px 24px rgba(15, 118, 110, 0.18);
+}
+
 .btn-secondary {
   background: #fff;
   color: var(--secondary);
   border-color: var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 .btn-light {
@@ -603,11 +625,3 @@ img {
     font-size: 0.78rem;
   }
 }
-
-
-
-
-
-
-
-
